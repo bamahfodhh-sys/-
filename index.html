@@ -222,6 +222,31 @@
 @media(max-width:700px){.decision-image{height:150px}.category-visual,.category-visual img{min-height:230px}.product-card-img{height:190px}.product-hero-image img{height:240px}.product-thumb img{height:180px}}
 
 .cart-text{width:auto;min-width:58px;padding:0 12px;font-size:.9rem;font-weight:800;text-decoration:none}
+
+
+/* Final CTA, icon and footer updates */
+.btn-gold{background:linear-gradient(135deg,#e8c978,var(--gold));color:#0f4f3b;box-shadow:0 14px 34px rgba(216,181,109,.32);border-color:rgba(255,255,255,.25)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(216,181,109,.42)}
+.hero-actions{justify-content:flex-start}
+.line-icon{width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:currentColor}
+.line-icon svg{width:22px;height:22px;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.hero-proof span .line-icon{width:22px;height:22px;color:#fff}
+.trust-item > .line-icon{width:50px;height:50px;display:grid;place-items:center;border-radius:18px;background:var(--cream);color:var(--green);flex:0 0 auto}
+.trust-item > .line-icon svg{width:26px;height:26px}
+.footer-grid-updated{grid-template-columns:1.2fr 1fr .85fr;align-items:start}
+.footer-link-columns{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;align-items:start}
+.footer-links{display:grid;gap:.42rem}
+.footer-links a{display:block;line-height:1.8}
+.footer-contact-list{display:grid;gap:.7rem;margin-top:.2rem}
+.contact-link{display:flex;align-items:center;gap:.65rem;color:rgba(255,255,255,.82)!important}
+.contact-link span{display:grid;gap:.05rem}
+.contact-link strong{font-size:.9rem;color:#fff;font-weight:800}
+.contact-link em{font-style:normal;color:rgba(255,255,255,.72);font-size:.92rem;direction:ltr;text-align:right}
+.contact-icon{width:36px;height:36px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;flex:0 0 auto;color:#fff}
+.contact-icon svg{width:21px;height:21px;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;color:rgba(255,255,255,.62);font-size:.9rem;text-align:center}
+@media(max-width:900px){.footer-grid-updated{grid-template-columns:1fr}.footer-link-columns{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.footer-link-columns{grid-template-columns:1fr}.hero-proof span{width:100%;justify-content:flex-start}.trust-item{padding-inline:0}}
 </style>
 </head>
 <body>
@@ -252,15 +277,8 @@
 <div class="hero-kicker">أضاحٍ وهدي وكفارات وإطعام</div>
 <h1 id="hero-title">أدِّ نسكك وصدقتك <span>عبر إثلاث</span></h1>
 <p>اختر ما تريد أداءه من الأضاحي والهدي والكفارات وصدقات اللحوم ووجبات الإطعام، ليُجهز الطلب ويُوزع على الفقراء والمحتاجين.</p>
-<div class="hero-actions">
-<a class="btn btn-primary" href="#intent">استعرض الخدمات</a>
-<a class="btn btn-soft" href="#how">اعرف الخيار الأنسب</a>
-</div>
-<div aria-label="نقاط طمأنة مختصرة" class="hero-proof">
-<span>✓ تعرف التفاصيل قبل الدفع</span>
-<span>✓ تجهيز وتوزيع على المحتاجين</span>
-<span>✓ دعم عند الحاجة</span>
-</div>
+<div class="hero-actions"><a class="btn btn-gold hero-donate" href="#intent">تبرع الآن</a></div>
+<div aria-label="نقاط طمأنة مختصرة" class="hero-proof"><span><span aria-hidden="true" class="line-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M7 3.5h7l3 3v14H7z"></path><path d="M14 3.5v4h4"></path><path d="M9 13.2l2 2 4-4"></path></svg></span>تفاصيل واضحة قبل الدفع</span><span><span aria-hidden="true" class="line-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 8.5 12 4l8 4.5-8 4.5z"></path><path d="M4 8.5v7l8 4.5 8-4.5v-7"></path><path d="M12 13v7"></path><path d="M16.5 16.3h2.8"></path><path d="M18.2 14.8l1.5 1.5-1.5 1.5"></path></svg></span>تجهيز وتوزيع على المحتاجين</span><span><span aria-hidden="true" class="line-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M5 12a7 7 0 0 1 14 0v4"></path><path d="M5 12v3.5a2 2 0 0 0 2 2h1v-7H7a2 2 0 0 0-2 2Z"></path><path d="M19 12v3.5a2 2 0 0 1-2 2h-1v-7h1a2 2 0 0 1 2 2Z"></path><path d="M13.5 19.5h2.2A3.3 3.3 0 0 0 19 16.2"></path></svg></span>دعم عند الحاجة</span></div>
 </div>
 </div>
 </section>
@@ -308,17 +326,13 @@
 <section aria-labelledby="popular-title" class="section shortcuts" id="popular">
 <div class="container">
 <span class="eyebrow">الأكثر طلبًا</span>
-<h2 class="section-title" id="popular-title">اختيارات قريبة من نيتك</h2>
-<p class="section-lead">أضحية تُذبح وتُوزع، كفارة تُطعم مساكين، صدقة لحم، أو وجبة إطعام تصل إلى المحتاجين.</p>
+<h2 class="section-title" id="popular-title">اختر خدمتك بسهولة</h2>
+<p class="section-lead">ابدأ من الخيار الأقرب لما تريد أداءه أو التبرع به.</p>
 <div class="shortcut-grid"><a class="shortcut shortcut-with-img" href="products/kaffarat-yameen.html"><div class="shortcut-photo"><img alt="كفارة اليمين — إطعام 10 مساكين" loading="lazy" src="https://drive.google.com/thumbnail?id=1JYybQXRbTF3G2aFFhOiD5rvm5tWk_iz9&amp;sz=w1600"/></div><div class="shortcut-copy"><strong>كفارة اليمين — إطعام 10 مساكين</strong><span>إطعام عشرة مساكين.</span></div><b class="go">←</b></a><a class="shortcut shortcut-with-img" href="products/fidyat-siyam.html"><div class="shortcut-photo"><img alt="فدية الصيام — إطعام مسكين عن يوم" loading="lazy" src="https://drive.google.com/thumbnail?id=1D0FQpSZt4YGj44mI-uza9JdI2fw5S_8Y&amp;sz=w1600"/></div><div class="shortcut-copy"><strong>فدية الصيام — إطعام مسكين عن يوم</strong><span>إطعام مسكين عن كل يوم.</span></div><b class="go">←</b></a><a class="shortcut shortcut-with-img" href="products/kaffarah-mughallaza.html"><div class="shortcut-photo"><img alt="الكفارة المغلظة — إطعام 60 مسكينًا" loading="lazy" src="https://drive.google.com/thumbnail?id=1n-izUhtPOeUb5TelMe1-5X0w4J3GYwwN&amp;sz=w1600"/></div><div class="shortcut-copy"><strong>الكفارة المغلظة — إطعام 60 مسكينًا</strong><span>إطعام ستين مسكينًا.</span></div><b class="go">←</b></a><a class="shortcut shortcut-with-img" href="products/udhiya.html"><div class="shortcut-photo"><img alt="الأضحية — ذبح وتوزيع" loading="lazy" src="https://drive.google.com/thumbnail?id=1Ud07MhfzcYEo91YHUv-NjJwgC1keR9Jy&amp;sz=w1600"/></div><div class="shortcut-copy"><strong>الأضحية — ذبح وتوزيع</strong><span>ذبح في الوقت الشرعي وتوزيع اللحم.</span></div><b class="go">←</b></a><a class="shortcut shortcut-with-img" href="products/meat-custom.html"><div class="shortcut-photo"><img alt="صدقة لحم حسب الكمية" loading="lazy" src="https://drive.google.com/thumbnail?id=1fYp_6FCKyeTGi64KnEJ0DTWlEKbAxf5N&amp;sz=w1600"/></div><div class="shortcut-copy"><strong>صدقة لحم حسب الكمية</strong><span>لحم يُجهز ويُوزع على الأسر المتعففة.</span></div><b class="go">←</b></a><a class="shortcut shortcut-with-img" href="products/kabsa-meat-520.html"><div class="shortcut-photo"><img alt="إطعام وجبة كبسة لحم 520 جم" loading="lazy" src="https://drive.google.com/thumbnail?id=19MCb4yYK8OOm_gK0Yb-S0FNZdegDhn-s&amp;sz=w1600"/></div><div class="shortcut-copy"><strong>إطعام وجبة كبسة لحم 520 جم</strong><span>وجبة جاهزة تُعد وتُوزع.</span></div><b class="go">←</b></a></div>
 </div>
 </section>
 <section aria-label="عوامل الطمأنة" class="trust">
-<div class="container trust-grid">
-<div class="trust-item"><i>✓</i><div><h3>تفاصيل واضحة قبل الدفع</h3><p>تعرف نوع الطلب والكمية قبل الإتمام.</p></div></div>
-<div class="trust-item"><i>↗</i><div><h3>تجهيز وتوزيع على المحتاجين</h3><p>تُجهز الطلبات وتُوزع على الفقراء والأسر المتعففة.</p></div></div>
-<div class="trust-item"><i>؟</i><div><h3>دعم عند الحاجة</h3><p>تواصل معنا إن احتجت مساعدة قبل الطلب أو بعده.</p></div></div>
-</div>
+<div class="container trust-grid"><div class="trust-item"><span aria-hidden="true" class="line-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M7 3.5h7l3 3v14H7z"></path><path d="M14 3.5v4h4"></path><path d="M9 13.2l2 2 4-4"></path></svg></span><div><h3>تفاصيل واضحة قبل الدفع</h3><p>تعرف نوع الطلب والكمية قبل الإتمام.</p></div></div><div class="trust-item"><span aria-hidden="true" class="line-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 8.5 12 4l8 4.5-8 4.5z"></path><path d="M4 8.5v7l8 4.5 8-4.5v-7"></path><path d="M12 13v7"></path><path d="M16.5 16.3h2.8"></path><path d="M18.2 14.8l1.5 1.5-1.5 1.5"></path></svg></span><div><h3>تجهيز وتوزيع على المحتاجين</h3><p>تُجهز الطلبات وتوزع على الفقراء والأسر المتعففة.</p></div></div><div class="trust-item"><span aria-hidden="true" class="line-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M5 12a7 7 0 0 1 14 0v4"></path><path d="M5 12v3.5a2 2 0 0 0 2 2h1v-7H7a2 2 0 0 0-2 2Z"></path><path d="M19 12v3.5a2 2 0 0 1-2 2h-1v-7h1a2 2 0 0 1 2 2Z"></path><path d="M13.5 19.5h2.2A3.3 3.3 0 0 0 19 16.2"></path></svg></span><div><h3>دعم عند الحاجة</h3><p>تواصل معنا إن احتجت مساعدة قبل الطلب أو بعده.</p></div></div></div>
 </section>
 <section aria-labelledby="how-title" class="section guide" id="how">
 <div class="container">
@@ -327,28 +341,18 @@
 <p class="section-lead">إن كنت تريد أضحية أو هديًا، فابدأ من الأضاحي والهدي. وإن كانت كفارة، فانتقل إلى الكفارات. وللصدقة والإطعام، اختر صدقات اللحوم أو وجبات الإطعام.</p>
 <div class="guide-grid">
 <article class="guide-card" style="--img:url('assets/section-definitions/adhahi-hady.png')">
-
-
 <div class="guide-content"><small>أضحية أو هدي</small><h3>الأضاحي والهدي</h3><p>لأداء الأضحية أو الهدي أو ذبيحة الحرم، مع الذبح والتوزيع حسب نوع الطلب.</p><a href="categories/adhahi-hady.html">اذهب للأضاحي والهدي ←</a></div><div aria-hidden="true" class="guide-image"></div></article>
 <article class="guide-card" style="--img:url('assets/section-definitions/kaffarat.png')">
-
-
 <div class="guide-content"><small>كفارة أو فدية</small><h3>الكفارات</h3><p>لكفارة اليمين، فدية الصيام، محظورات الإحرام، أو الكفارة المغلظة. يظهر عدد المساكين في كل خيار.</p><a href="categories/kaffarat-fida.html">اذهب للكفارات ←</a></div><div aria-hidden="true" class="guide-image"></div></article>
 <article class="guide-card" style="--img:url('assets/section-definitions/sadaqat-luhum.png')">
-
-
 <div class="guide-content"><small>صدقة لحم</small><h3>صدقات اللحوم</h3><p>لتقديم صدقة لحم بالكمية أو النوع، وتوزيعها على الفقراء والأسر المتعففة.</p><a href="categories/sadaqat-luhum.html">قدّم صدقة لحم ←</a></div><div aria-hidden="true" class="guide-image"></div></article>
 <article class="guide-card" style="--img:url('assets/section-definitions/wajabat-itam.png')">
-
-
 <div class="guide-content"><small>وجبة إطعام</small><h3>وجبات الإطعام</h3><p>لتقديم وجبات جاهزة من اللحم أو الدجاج، تُعد وتُوزع على المحتاجين.</p><a href="categories/wajabat-itam.html">أطعم وجبة ←</a></div><div aria-hidden="true" class="guide-image"></div></article>
 </div>
 </div>
 </section>
 <section aria-labelledby="about-title" class="section about" id="about">
 <div class="container about-grid">
-
-
 <div class="about-card">
 <span class="eyebrow">منتج وقفي</span>
 <h2 class="section-title" id="about-title">عن إثلاث</h2>
@@ -392,23 +396,40 @@
 </div>
 </section>
 </main>
+
 <footer class="footer">
-<div class="container footer-grid">
-<div>
-<img alt="متجر إثلاث" class="footer-logo" src="assets/logo-ithlath.png"/>
-<h3>عن إثلاث</h3>
+<div class="container footer-grid footer-grid-updated">
+<div class="footer-about">
+<a class="brand footer-brand" href="index.html"><img alt="متجر إثلاث" class="brand-logo" src="assets/logo-ithlath.png"/></a>
 <p>متجر إثلاث أحد منتجات وقف عطاء البيت الحرام. نعمل على تعظيم الاستفادة من لحوم الهدي والأضاحي وصدقات اللحوم، عبر تقنيات الحفظ والمعالجة الحرارية، لتصل في صورة منتجات غذائية عالية الجودة إلى المستفيدين على مدار العام.</p>
 </div>
-<div>
-<h3>الأقسام</h3>
-<div class="footer-links"><a href="categories/adhahi-hady.html">الأضاحي والهدي</a><a href="categories/kaffarat-fida.html">الكفارات</a><a href="categories/sadaqat-luhum.html">صدقات اللحوم</a><a href="categories/wajabat-itam.html">وجبات الإطعام</a></div>
+<div class="footer-nav-block">
+<h3>روابط المتجر</h3>
+<div class="footer-link-columns">
+<div class="footer-links">
+<a href="index.html">الرئيسية</a>
+<a href="categories/adhahi-hady.html">الأضاحي والهدي</a>
+<a href="categories/kaffarat-fida.html">الكفارات</a>
+<a href="categories/sadaqat-luhum.html">صدقات اللحوم</a>
+<a href="categories/wajabat-itam.html">وجبات الإطعام</a>
 </div>
-<div>
-<h3>روابط مهمة</h3>
-<div class="footer-links"><a href="index.html#about">عن إثلاث</a><a href="index.html#faq">الأسئلة الشائعة</a><a href="index.html#how">اعرف أين تبدأ</a></div>
+<div class="footer-links">
+<a href="index.html#about">عن إثلاث</a>
+<a href="index.html#partners">شركاؤنا</a>
+<a href="index.html#faq">الأسئلة الشائعة</a>
 </div>
 </div>
-<div class="container copy">الحقوق محفوظة | متجر إثلاث</div>
+</div>
+<div class="footer-contact-block">
+<h3>التواصل</h3>
+<div class="footer-contact-list">
+<a class="contact-link" href="tel:+966500182933"><span aria-hidden="true" class="contact-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M7.3 4.5 5.4 6.4c-.7.7-.8 1.7-.3 2.6 2.1 4.1 5.8 7.8 9.9 9.9.9.5 1.9.4 2.6-.3l1.9-1.9c.5-.5.5-1.3 0-1.8l-2.3-2.3c-.5-.5-1.3-.5-1.8 0l-.9.9c-1.9-1-3.5-2.6-4.5-4.5l.9-.9c.5-.5.5-1.3 0-1.8L9.1 4.5c-.5-.5-1.3-.5-1.8 0Z"></path></svg></span><span><strong>رقم الهاتف</strong><em>+966500182933</em></span></a>
+<a class="contact-link" href="https://wa.me/966500182933" rel="noopener" target="_blank"><span aria-hidden="true" class="contact-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M5.2 19 6.3 15.6a7.3 7.3 0 1 1 2.7 2.6z"></path><path d="M9.2 8.8c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.5c.1.3.1.5-.1.7l-.4.5c-.1.1-.2.3 0 .5.4.8 1.3 1.7 2.2 2.2.2.1.4.1.5 0l.6-.5c.2-.2.4-.2.7-.1l1.5.7c.3.1.4.3.4.6v.5c0 .3-.1.5-.4.7-.5.4-1.3.5-2.1.3-2.5-.7-5.2-3.4-5.9-5.9-.2-.8-.1-1.6.3-2.1Z"></path></svg></span><span><strong>واتساب</strong><em>+966500182933</em></span></a>
+</div>
+</div>
+</div>
+<div class="container copy footer-bottom">الحقوق محفوظة | متجر إثلاث</div>
 </footer>
+
 </body>
 </html>
