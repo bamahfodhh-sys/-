@@ -46,7 +46,7 @@
 
     /* Hero */
     .hero{position:relative;overflow:hidden;background:
-      linear-gradient(90deg,rgba(15,79,59,.98),rgba(15,79,59,.8) 46%,rgba(15,79,59,.18)),
+      linear-gradient(90deg,rgba(15,79,59,.18),rgba(15,79,59,.8) 54%,rgba(15,79,59,.98)),
       url('home/hero.png') center/cover no-repeat;
       color:#fff;min-height:680px;display:flex;align-items:center}
     .hero::after{content:"";position:absolute;inset:auto -12% -36% -12%;height:280px;background:var(--cream-2);border-radius:50% 50% 0 0/70% 70% 0 0}
@@ -92,6 +92,12 @@
     .shortcut span{display:block;color:var(--muted);font-size:.88rem;margin-top:.15rem}
     .shortcut .go{flex:0 0 auto;width:38px;height:38px;border-radius:999px;background:var(--cream);display:grid;place-items:center;color:var(--green);font-weight:900}
 
+    .shortcut-with-img{align-items:center;min-height:132px;padding:12px 14px;gap:14px}
+    .shortcut-photo{width:112px;height:94px;border-radius:18px;overflow:hidden;background:var(--cream);border:1px solid var(--border);flex:0 0 112px}
+    .shortcut-photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .shortcut-copy{flex:1;min-width:0}
+    @media(max-width:700px){.shortcut-with-img{align-items:flex-start}.shortcut-photo{width:96px;height:84px;flex-basis:96px}}
+
     /* Trust strip */
     .trust{padding:28px 0;background:#fff;border-block:1px solid var(--border)}
     .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -112,14 +118,14 @@
     .guide-content a{font-weight:900;color:var(--green)}
 
     /* About */
-    .about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:28px;align-items:center}
-    .about-card{background:#fff;border:1px solid var(--border);border-radius:32px;padding:32px;box-shadow:var(--shadow)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+    .about-card{background:#fff;border:1px solid var(--border);border-radius:32px;padding:40px;box-shadow:var(--shadow);min-height:480px;display:flex;flex-direction:column;justify-content:center}
     .about-card p{color:var(--muted);margin:.8rem 0 0}
     .about-points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
     .about-point{background:var(--cream);border:1px solid var(--border);border-radius:22px;padding:18px}
     .about-point h3{margin:0 0 .35rem;color:var(--green);font-size:1rem}
     .about-point p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.65}
-    .about-visual{border-radius:34px;min-height:420px;background:linear-gradient(135deg,rgba(15,79,59,.78),rgba(15,79,59,.2)),url('home/about-store.png') center/cover no-repeat;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .about-visual{border-radius:34px;min-height:480px;height:100%;background:linear-gradient(90deg,rgba(15,79,59,.18),rgba(15,79,59,.82)),url('home/about-store.png') center/cover no-repeat;box-shadow:var(--shadow);position:relative;overflow:hidden}
     .about-visual::after{content:"إثلاث";position:absolute;right:28px;bottom:20px;color:rgba(255,255,255,.9);font-size:3.4rem;font-weight:900}
 
 
@@ -239,3 +245,15 @@
 .product-thumb{border-radius:20px;overflow:hidden;margin-bottom:18px;border:1px solid var(--border);background:var(--cream)}
 .product-thumb img{width:100%;height:210px;object-fit:cover;display:block}
 @media(max-width:700px){.decision-image{height:150px}.category-visual,.category-visual img{min-height:230px}.product-card-img{height:190px}.product-hero-image img{height:240px}.product-thumb img{height:180px}}
+
+
+/* Product image galleries from refreshed Drive assets */
+.product-gallery{border-radius:26px;overflow:hidden;margin-bottom:24px;border:1px solid var(--border);background:#fff;box-shadow:0 16px 38px rgba(13,80,59,.08)}
+.product-gallery-main{height:390px;background:var(--cream);overflow:hidden}
+.product-gallery-main img{width:100%;height:100%;object-fit:cover;display:block}
+.product-gallery-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px;background:rgba(250,247,241,.9)}
+.product-gallery-thumbs img{width:100%;height:96px;object-fit:cover;border-radius:14px;border:1px solid var(--border);background:#fff;display:block}
+.product-card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:.3s ease}
+@media(max-width:700px){.product-gallery-main{height:250px}.product-gallery-thumbs{grid-template-columns:repeat(2,1fr)}.product-gallery-thumbs img{height:95px}}
+
+.cart-text{width:auto;min-width:58px;padding:0 12px;font-size:.9rem;font-weight:800;text-decoration:none}
